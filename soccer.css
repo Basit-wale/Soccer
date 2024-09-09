@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.pitch{
+    height: 30em;
+    width: 27em;
+    border: 7px solid #f4f4f4;
+    margin: auto;
+    margin-top: 6em;
+}
+#player-one{
+    height: .6em;
+    width: 4em;
+    background-color: gray;
+    margin: auto;
+    transform: translateY(1em);
+    animation: 5s player infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player{
+    100%{
+        transform: translate(10em, 1em);
+    }
+    50%{
+        margin: auto;
+    }
+    0%{
+        transform: translate(-10em, 1em);
+    }
+}
+#player-two{
+    height: .6em;
+    width: 4em;
+    background-color: gray;
+    transform: translate(3em, 3em);
+    animation: 3s player2 infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player2{
+    100%{
+        transform: translate(8em, 3em);
+    }
+    0%{
+        transform: translate(3em, 3em);
+    }
+}
+#player-three{
+    height: .6em;
+    width: 4em;
+    background-color: gray;
+    transform: translate(19em, 4em);
+    float: left;
+    animation: 3s player3 infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player3{
+    100%{
+        transform: translate(13em, 4em);
+    }
+    0%{
+        transform: translate(23em, 4em);
+    }
+}
+.teamB #player-one{
+    transform: translateY(27em);
+    animation: 5s player4 infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player4{
+    100%{
+        transform: translate(10em, 27em);
+    }
+    50%{
+        margin: auto;
+    }
+    0%{
+        transform: translate(-10em, 27em);
+    }
+}
+.teamB #player-two{                                                                 
+    transform: translate(3em, 23em);
+    animation: 3s player5 infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player5{
+    100%{
+        transform: translate(15em, 23em);
+    }
+    0%{
+        transform: translate(23em, 23em);
+    }
+}
+.teamB #player-three{
+    transform: translate(19em, 24em);
+    animation: 3s player6 infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes player6{
+    100%{
+        transform: translate(11em, 24em);
+    }
+    0%{
+        transform: translate(3em, 24em);
+    }
+}
+.pitch-center{
+    height: 8em;
+    width: 8em;
+    border: 5px solid #ffffffc9;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 8em;
+}
+hr{
+    margin-top: 4em;
+}
+.ball{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 100%;
+    margin: auto;
+    /* transform: translateY(-5em); */
+    animation: 10s ball infinite alternate-reverse backwards;
+    animation-timing-function: ease-in-out;
+    display: none;
+}
+@keyframes ball{
+    20%{
+        transform: translate(6.4em, 4em);
+    }
+    10%{
+        transform: translate(6em, -19.1em);
+    }
+    0%{
+        transform: translate(-7em, 5.7em);
+    }
+}
